@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main.css">
+	<script type="text/javascript" src="../script/main.js"></script>
+    <title>FinnishHosting</title>
+</head>
+
+<body onload="laskeHinta()">
+    <h1>FinnishHosting Oy</h1>
+    <h4>Server provider since 2022</h4>
+	<ul class="navibar">
+		<li class="navibar"><a class="navibar" href="../index.html">Home</a></li>
+		<li class="navibar"><a class="navibar" href="pricing.html">Pricing</a></li>
+		<li class="navibar"><a class="navibar" href="info.html">Contact</a></li>
+	</ul>
+    <img src="../images/server.png" alt="server" width="200px" height="220px"><h5>Hardware</h5>
+    <p>We use the best compontents in our servers:</p>
+    <ul class="components">
+        <li class="component">M.2. SSD</li>
+        <li class="component">DDR5 RAM</li>
+        <li class="component">AMD Ryzen 9 3900X 3.8GHz processors</li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <h5>Price checker</h5>
+    <form>
+        <label for="SSD">SSD Space (between 10 and 1000Gb):</label>
+        <input type="range" id="SSD" name="SSD" min="10" max="1000" step="10" value="10" oninput="amountssd.value=SSD.value">
+        <output id="amountssd" name="amountssd" for="SSD">10</output>
+        <br>
+        <br>
+        <label for="CPU">CPU's (between 1 and 10 CPU's):</label>
+        <input type="range" id="CPU" name="CPU" min="1" max="10" step="1" value="1" oninput="amountcpu.value=CPU.value">
+        <output id="amountcpu" name="amountcpu" for="CPU">1</output>
+        <br>
+        <br>
+        <label for="RAM">RAM (between 1 and 8Gb):</label>
+        <input type="range" id="RAM" name="RAM" min="1" max="8" step="1" value="1" oninput="amountram.value=RAM.value">
+        <output id="amountram" name="amountram" for="RAM">1</output>
+        <br>
+        <br>
+        <p id="hinta">0 €/month</p>
+        <input type="button" id="laske" value="Check price" onclick="laskeHinta()"></button>
+    </form>
+    <footer>
+        <p>&copy; Copyright 2022 Hermanni Bäckman</p>
+    </footer>
+</body>
+
+</html>

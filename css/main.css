@@ -1,0 +1,147 @@
+body {
+    margin: 0; /* Poistetaan bodyn tuoma 8px marginaali sivuilta */
+    background-color: #e0e0e0;
+}
+
+p.about {
+    text-indent: 5px;
+    margin: 3px;
+}
+
+h2 {
+    text-indent: 20px;
+}
+
+h1,h4 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul.navibar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  
+    position: -webkit-sticky; /* Safari vaatii tämän*/
+    position: sticky;         /* eikä tämä toimi Internet Explorerissa */
+    top: 0;
+    width: 100%;
+}
+  
+li.navibar {
+    float: left;
+}
+  
+li a.navibar {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: Verdana;
+    border-right: 1px solid rgb(97, 97, 97);
+}
+  
+li.navibar a:hover {
+    background-color: #111;
+}
+
+img {
+    float: left;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+p.location {
+    text-align: left;
+    padding: 40px;
+    font-size: 25px;
+}
+
+footer {
+    font-family: 'Lucida Sans';
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    color: rgb(145, 145, 145);
+    background-color: #333;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+
+footer p {
+    padding-left: 5px;
+}
+
+/* Tästä alkaa pricing.html sivun tyylit */
+
+ul.components {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 250px;
+    line-height: 2;
+}
+
+h5 {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+form {
+  margin-left: 5px;
+}
+
+p#hinta {
+  font-size: 30px;
+  margin-left: 70px;
+}
+
+input[type=button]#laske {
+  background-color: #0aaa04;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  margin-left: 70px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+input[type=button]:hover#laske {
+  background-color: #035800;
+}
+
+/* Tästä alkaa info.html sivun tyylit */
+p.contact {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+#nappi1,#nappi2,#nappi3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+#nappi1:hover,#nappi2:hover,#nappi3:hover {
+  background-color: #555555;
+  color: white;
+}
+
+a.mail,a.phone {
+  color: #333;
+}
+
+p#tiedot1,p#tiedot2,p#tiedot3 {
+  line-height: 25px;
+}
